@@ -42,6 +42,19 @@ namespace Ticket2.Controllers
             }
         }
 
+        public ActionResult Entrar(string username, string password)
+        {
+            // Aquí después puedes validar usuario y contraseña
+
+            return RedirectToAction("Menu");
+        }
+
+        // GET: Login/Menu
+        public ActionResult Menu()
+        {
+            return View();
+        }
+
         // GET: Login/Edit/5
         public ActionResult Edit(int id)
         {
