@@ -42,9 +42,9 @@ namespace Ticket2.Controllers
             }
         }
 
+        [HttpPost]
         public ActionResult Entrar(string username, string password)
         {
-            // Aquí después puedes validar usuario y contraseña
 
             return RedirectToAction("Menu");
         }
