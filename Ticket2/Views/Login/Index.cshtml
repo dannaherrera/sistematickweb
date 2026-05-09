@@ -1,0 +1,60 @@
+﻿
+@{
+    ViewBag.Title = "Login";
+    Layout = null;
+
+}
+
+<link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+<link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="~/Content/CSS/estilos.css" rel="stylesheet" type="text/css"/>
+
+<h1 class="text-center">Login</h1>
+
+<div class="container min-vh-100 d-flex justify-content-center align-items-center">
+
+    <div class="card shadow-lg border-0 rounded-4 w-100" style="max-width: 28rem;">
+
+        <div class="card-body p-4">
+
+            <h3 class="text-center mb-4">Iniciar Sesión</h3>
+
+            <form class="mx-auto" style="max-width: 22rem;">
+
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">
+                        Nombre de usuario
+                    </label>
+
+                    <input type="text"
+                           class="form-control form-control-lg  text-center"
+                           id="intUsername"
+                           placeholder="name@example.com">
+
+                    <div id="emailHelp" class="form-text">
+                        Nunca compartiremos tu correo.
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label ">
+                        Contraseña
+                    </label>
+
+                    <input type="password"
+                           class="form-control form-control-lg text-center"
+                           id="exampleInputPassword1"
+                           placeholder="••••••••">
+                </div>
+
+
+
+                <button type="submit" class="btn btn-primary btn-lg rounded-3">
+                    Entrar
+                </button>
+
+            </form>
+
+        </div>
+    </div>
+</div>
