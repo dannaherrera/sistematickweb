@@ -1,0 +1,44 @@
+## --- ARCHIVOS DE CONFIGURACIÓN DE VISUAL STUDIO ---
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+## --- CARPETAS DE COMPILACIÓN (CÓDIGO PROCESADO) ---
+[Bb]in/
+[Oo]bj/
+
+## --- GESTORES DE PAQUETES (DEPENDENCIAS) ---
+# Descarta los paquetes de NuGet que se restauran automáticamente al compilar
+packages/
+!packages/repositories.config
+# Si usas herramientas frontend modernas
+node_modules/
+bower_components/
+
+## --- ARCHIVOS DE BASE DE DATOS LOCALES ---
+# Evita subir tu base de datos de pruebas o archivos MDF locales
+*.mdf
+*.ldf
+*.sdf
+
+## --- INFORMES Y DIAGNÓSTICOS ---
+*.log
+*.tlog
+*.log.*
+App_Data/*.log
+App_Data/*.msl
+App_Data/*.ldf
+App_Data/*.mdf
+
+## --- ARCHIVOS DE PUBLICACIÓN (PUBLISH) ---
+*.Publish.xml
+*.pubxml
+*.pubxml.user
+
+## --- ARCHIVOS DEL SISTEMA OPERATIVO ---
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
