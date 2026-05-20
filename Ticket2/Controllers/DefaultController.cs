@@ -1,7 +1,11 @@
 ﻿using SistemaTickets.Models;
 using SistemaTickets.Models.Clases;
+using System;
 using System.Data.SqlClient;
+using System.Diagnostics;
 using System.Web.Mvc;
+
+
 namespace SistemaTickets.Controllers
 {
     public class DefaultController : Controller
@@ -15,12 +19,26 @@ namespace SistemaTickets.Controllers
         public ActionResult Conexion()
         {
             ConexionBD newconexionBD = new ConexionBD();
-            using (SqlConnection conexion = newconexionBD.ObtenerConexion())
-            {
-                conexion.Open();
+            TempData["NombreConexion"] = "DefaultConnection";
 
+
+            try
+            {
+                using (SqlConnection conexion = newconexionBD.ObtenerConexion())
+                {
+                    conexion.Open();
+                    System.Diagnostics.Debug.WriteLine("Conexión a la base de datos establecida con éxito para: DefaultConnection");
+                    TempData["MensajeExito"] = "Conexión a la base de datos establecida con éxito";
+                }
             }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine("Hay un error al tratar de conectar a la BD");
+               TempData["MensajeError"] = "Error al conectar con la base de datos: " + ex.Message;
+            }
+
             return View();
+
         }
 
         // GET: Default/Details/5
