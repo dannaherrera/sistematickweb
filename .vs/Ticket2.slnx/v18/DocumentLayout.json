@@ -3,32 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\gasimar\\Documents\\SistemaTickWeb\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7E731AE7-2E7F-4165-BFF9-124261285A4F}|Ticket2\\Ticket2.csproj|c:\\users\\gasimar\\documents\\sistematickweb\\ticket2\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{7E731AE7-2E7F-4165-BFF9-124261285A4F}|Ticket2\\Ticket2.csproj|solutionrelative:ticket2\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+      "AbsoluteMoniker": "D:0:0:{7E731AE7-2E7F-4165-BFF9-124261285A4F}|Ticket2\\Ticket2.csproj|C:\\Users\\gasimar\\Documents\\SistemaTickWeb\\ticket2\\controllers\\defaultcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E731AE7-2E7F-4165-BFF9-124261285A4F}|Ticket2\\Ticket2.csproj|solutionrelative:ticket2\\controllers\\defaultcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E731AE7-2E7F-4165-BFF9-124261285A4F}|Ticket2\\Ticket2.csproj|c:\\users\\gasimar\\documents\\sistematickweb\\ticket2\\models\\clases\\conexionbd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E731AE7-2E7F-4165-BFF9-124261285A4F}|Ticket2\\Ticket2.csproj|solutionrelative:ticket2\\models\\clases\\conexionbd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7E731AE7-2E7F-4165-BFF9-124261285A4F}|Ticket2\\Ticket2.csproj|C:\\Users\\gasimar\\Documents\\SistemaTickWeb\\ticket2\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7E731AE7-2E7F-4165-BFF9-124261285A4F}|Ticket2\\Ticket2.csproj|solutionrelative:ticket2\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7E731AE7-2E7F-4165-BFF9-124261285A4F}|Ticket2\\Ticket2.csproj|c:\\users\\gasimar\\documents\\sistematickweb\\ticket2\\controllers\\defaultcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7E731AE7-2E7F-4165-BFF9-124261285A4F}|Ticket2\\Ticket2.csproj|solutionrelative:ticket2\\controllers\\defaultcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7E731AE7-2E7F-4165-BFF9-124261285A4F}|Ticket2\\Ticket2.csproj|C:\\Users\\gasimar\\Documents\\SistemaTickWeb\\ticket2\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E731AE7-2E7F-4165-BFF9-124261285A4F}|Ticket2\\Ticket2.csproj|solutionrelative:ticket2\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E731AE7-2E7F-4165-BFF9-124261285A4F}|Ticket2\\Ticket2.csproj|C:\\Users\\gasimar\\Documents\\SistemaTickWeb\\ticket2\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{7E731AE7-2E7F-4165-BFF9-124261285A4F}|Ticket2\\Ticket2.csproj|solutionrelative:ticket2\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7E731AE7-2E7F-4165-BFF9-124261285A4F}|Ticket2\\Ticket2.csproj|C:\\Users\\gasimar\\Documents\\SistemaTickWeb\\ticket2\\views\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{7E731AE7-2E7F-4165-BFF9-124261285A4F}|Ticket2\\Ticket2.csproj|solutionrelative:ticket2\\views\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7E731AE7-2E7F-4165-BFF9-124261285A4F}|Ticket2\\Ticket2.csproj|c:\\users\\gasimar\\documents\\sistematickweb\\ticket2\\views\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{7E731AE7-2E7F-4165-BFF9-124261285A4F}|Ticket2\\Ticket2.csproj|solutionrelative:ticket2\\views\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{7E731AE7-2E7F-4165-BFF9-124261285A4F}|Ticket2\\Ticket2.csproj|C:\\Users\\gasimar\\Documents\\SistemaTickWeb\\ticket2\\views\\login\\menu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{7E731AE7-2E7F-4165-BFF9-124261285A4F}|Ticket2\\Ticket2.csproj|solutionrelative:ticket2\\views\\login\\menu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7E731AE7-2E7F-4165-BFF9-124261285A4F}|Ticket2\\Ticket2.csproj|C:\\Users\\gasimar\\Documents\\SistemaTickWeb\\ticket2\\models\\clases\\conexionbd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7E731AE7-2E7F-4165-BFF9-124261285A4F}|Ticket2\\Ticket2.csproj|solutionrelative:ticket2\\models\\clases\\conexionbd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,30 +38,47 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 2,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
+              "Title": "RouteConfig.cs",
+              "DocumentMoniker": "C:\\Users\\gasimar\\Documents\\SistemaTickWeb\\Ticket2\\App_Start\\RouteConfig.cs",
+              "RelativeDocumentMoniker": "Ticket2\\App_Start\\RouteConfig.cs",
+              "ToolTip": "C:\\Users\\gasimar\\Documents\\SistemaTickWeb\\Ticket2\\App_Start\\RouteConfig.cs",
+              "RelativeToolTip": "Ticket2\\App_Start\\RouteConfig.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-19T23:32:27.976Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "DefaultController.cs",
               "DocumentMoniker": "C:\\Users\\gasimar\\Documents\\SistemaTickWeb\\Ticket2\\Controllers\\DefaultController.cs",
               "RelativeDocumentMoniker": "Ticket2\\Controllers\\DefaultController.cs",
               "ToolTip": "C:\\Users\\gasimar\\Documents\\SistemaTickWeb\\Ticket2\\Controllers\\DefaultController.cs",
               "RelativeToolTip": "Ticket2\\Controllers\\DefaultController.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAowCsAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAAowCQAAABiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-19T23:28:14.743Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\gasimar\\Documents\\SistemaTickWeb\\Ticket2\\Views\\Login\\Index.cshtml",
               "RelativeDocumentMoniker": "Ticket2\\Views\\Login\\Index.cshtml",
               "ToolTip": "C:\\Users\\gasimar\\Documents\\SistemaTickWeb\\Ticket2\\Views\\Login\\Index.cshtml",
               "RelativeToolTip": "Ticket2\\Views\\Login\\Index.cshtml",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAACQAAAAAAAAAAAAuwDUAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-05-09T04:53:42.097Z",
               "EditorCaption": ""
@@ -69,66 +86,52 @@
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "ConexionBD.cs",
-              "DocumentMoniker": "C:\\Users\\gasimar\\Documents\\SistemaTickWeb\\Ticket2\\Models\\clases\\ConexionBD.cs",
-              "RelativeDocumentMoniker": "Ticket2\\Models\\clases\\ConexionBD.cs",
-              "ToolTip": "C:\\Users\\gasimar\\Documents\\SistemaTickWeb\\Ticket2\\Models\\clases\\ConexionBD.cs",
-              "RelativeToolTip": "Ticket2\\Models\\clases\\ConexionBD.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-20T00:05:39.38Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
               "Title": "Menu.cshtml",
               "DocumentMoniker": "C:\\Users\\gasimar\\Documents\\SistemaTickWeb\\Ticket2\\Views\\Login\\Menu.cshtml",
               "RelativeDocumentMoniker": "Ticket2\\Views\\Login\\Menu.cshtml",
               "ToolTip": "C:\\Users\\gasimar\\Documents\\SistemaTickWeb\\Ticket2\\Views\\Login\\Menu.cshtml",
               "RelativeToolTip": "Ticket2\\Views\\Login\\Menu.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-09T05:24:58.778Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-09T05:24:58.778Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "LoginController.cs",
               "DocumentMoniker": "C:\\Users\\gasimar\\Documents\\SistemaTickWeb\\Ticket2\\Controllers\\LoginController.cs",
               "RelativeDocumentMoniker": "Ticket2\\Controllers\\LoginController.cs",
               "ToolTip": "C:\\Users\\gasimar\\Documents\\SistemaTickWeb\\Ticket2\\Controllers\\LoginController.cs",
               "RelativeToolTip": "Ticket2\\Controllers\\LoginController.cs",
-              "ViewState": "AgIAADQAAAAAAAAAAAAIwEMAAABOAAAAAAAAAA==",
+              "ViewState": "AgIAAFsAAAAAAAAAAAAqwDAAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-09T04:57:05.663Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Web.config",
-              "DocumentMoniker": "C:\\Users\\gasimar\\Documents\\SistemaTickWeb\\Ticket2\\Web.config",
-              "RelativeDocumentMoniker": "Ticket2\\Web.config",
-              "ToolTip": "C:\\Users\\gasimar\\Documents\\SistemaTickWeb\\Ticket2\\Web.config",
-              "RelativeToolTip": "Ticket2\\Web.config",
-              "ViewState": "AgIAACQAAAAAAAAAAAAAwC0AAABDAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2026-05-20T19:26:00.079Z",
+              "DocumentIndex": 1,
+              "Title": "ConexionBD.cs",
+              "DocumentMoniker": "C:\\Users\\gasimar\\Documents\\SistemaTickWeb\\Ticket2\\Models\\clases\\ConexionBD.cs",
+              "RelativeDocumentMoniker": "Ticket2\\Models\\clases\\ConexionBD.cs",
+              "ToolTip": "C:\\Users\\gasimar\\Documents\\SistemaTickWeb\\Ticket2\\Models\\clases\\ConexionBD.cs",
+              "RelativeToolTip": "Ticket2\\Models\\clases\\ConexionBD.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABEAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-20T00:05:39.38Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "web.config",
-              "DocumentMoniker": "C:\\Users\\gasimar\\Documents\\SistemaTickWeb\\Ticket2\\Views\\web.config",
-              "RelativeDocumentMoniker": "Ticket2\\Views\\web.config",
-              "ToolTip": "C:\\Users\\gasimar\\Documents\\SistemaTickWeb\\Ticket2\\Views\\web.config",
-              "RelativeToolTip": "Ticket2\\Views\\web.config",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "Web.config",
+              "DocumentMoniker": "C:\\Users\\gasimar\\Documents\\SistemaTickWeb\\Ticket2\\Web.config",
+              "RelativeDocumentMoniker": "Ticket2\\Web.config",
+              "ToolTip": "C:\\Users\\gasimar\\Documents\\SistemaTickWeb\\Ticket2\\Web.config",
+              "RelativeToolTip": "Ticket2\\Web.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2026-05-20T19:25:47.796Z",
+              "WhenOpened": "2026-05-19T23:40:07.96Z",
               "EditorCaption": ""
             }
           ]

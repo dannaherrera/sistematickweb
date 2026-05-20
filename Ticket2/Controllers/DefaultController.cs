@@ -16,6 +16,31 @@ namespace SistemaTickets.Controllers
             return View();
         }   
 
+        public ActionResult Conexion()
+        {
+            ConexionBD newconexionBD = new ConexionBD();
+            TempData["NombreConexion"] = "DefaultConnection";
+
+
+            try
+            {
+                using (SqlConnection conexion = newconexionBD.ObtenerConexion())
+                {
+                    conexion.Open();
+                    System.Diagnostics.Debug.WriteLine("Conexión a la base de datos establecida con éxito para: DefaultConnection");
+                    TempData["MensajeExito"] = "Conexión a la base de datos establecida con éxito";
+                }
+            }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine("Hay un error al tratar de conectar a la BD");
+               TempData["MensajeError"] = "Error al conectar con la base de datos: " + ex.Message;
+            }
+
+            return View();
+
+        }
+
         // GET: Default/Details/5
         public ActionResult Details(int id)
         {
