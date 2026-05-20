@@ -1,7 +1,11 @@
 ﻿using SistemaTickets.Models;
 using SistemaTickets.Models.Clases;
+using System;
 using System.Data.SqlClient;
+using System.Diagnostics;
 using System.Web.Mvc;
+
+
 namespace SistemaTickets.Controllers
 {
     public class DefaultController : Controller
@@ -10,18 +14,7 @@ namespace SistemaTickets.Controllers
         public ActionResult Index()
         {
             return View();
-        }
-
-        public ActionResult Conexion()
-        {
-            ConexionBD newconexionBD = new ConexionBD();
-            using (SqlConnection conexion = newconexionBD.ObtenerConexion())
-            {
-                conexion.Open();
-
-            }
-            return View();
-        }
+        }   
 
         // GET: Default/Details/5
         public ActionResult Details(int id)

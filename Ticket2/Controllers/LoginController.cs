@@ -1,5 +1,7 @@
-﻿using System;
+﻿using SistemaTickets.Models.Clases;
+using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -45,8 +47,28 @@ namespace Ticket2.Controllers
         [HttpPost]
         public ActionResult Entrar(string username, string password)
         {
+            ConexionBD newconexionBD = new ConexionBD();
 
-            return RedirectToAction("Menu");
+            try
+            {
+                using (SqlConnection conexion = newconexionBD.ObtenerConexion())
+                {
+
+                    conexion.Open();
+
+                    System.Diagnostics.Debug.WriteLine("La conexión se abrio exitosamente");
+                    
+
+                    return RedirectToAction("/Menu");
+                }
+            }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine("Exite un error con la conexion " + ex.Message);
+                TempData["MensajeError"] = "Error al conectar: " + ex.Message;
+
+                return RedirectToAction("Index");
+            }
         }
 
         // GET: Login/Menu
