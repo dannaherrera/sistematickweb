@@ -3,9 +3,68 @@
     ViewBag.Title = "Menu";
     Layout = null;
 }
-
 <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
 <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
 
-<h1>Hola!
-    Ha redireccionado al menu</h1>
+<nav class="navbar navbar-expand-lg navbar-lester">
+    <div class="container-fluid">
+
+        <a class="navbar-brand d-flex align-items-center" href="@Url.Action("Menu", "Home")">
+            <img src="~/Content/img/logo-lester.png" alt="Lester Colchones" class="logo-lester" />
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarLester"
+                aria-controls="navbarLester" aria-expanded="false" aria-label="Abrir menú">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarLester">
+            <ul class="navbar-nav align-items-lg-center gap-lg-3">
+
+                <li class="nav-item">
+                    <a class="nav-link nav-link-lester" href="@Url.Action("Menu", "Home")">
+                        <i class="bi bi-house-door"></i>
+                        <span>Inicio</span>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link nav-link-lester" href="@Url.Action("Generar", "Tickets")">
+                        <i class="bi bi-plus-square"></i>
+                        <span>Generación<br class="d-none d-lg-block" /> de Tickets</span>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link nav-link-lester" href="@Url.Action("Index", "Panel")">
+                        <i class="bi bi-easel"></i>
+                        <span>Panel de<br class="d-none d-lg-block" /> Control</span>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link nav-link-lester" href="@Url.Action("Index", "Catalogos")">
+                        <i class="bi bi-diagram-3"></i>
+                        <span>Catálogos</span>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link nav-link-lester" href="@Url.Action("Index", "Solicitudes")">
+                        <i class="bi bi-chat-left"></i>
+                        <span>Solicitudes</span>
+                    </a>
+                </li>
+
+                <li class="nav-item ms-lg-3">
+                    <a class="btn btn-salir" href="@Url.Action("Salir", "Login")">
+                        <i class="bi bi-box-arrow-right"></i>
+                        <span>Salir</span>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+
+    </div>
+</nav>

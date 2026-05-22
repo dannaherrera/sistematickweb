@@ -123,6 +123,8 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\clases\ConexionBD.cs" />
+    <Compile Include="Models\clases\MensajeAlerta.cs" />
+    <Compile Include="Models\clases\VerificarSesion.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -14,7 +14,7 @@ namespace SistemaTickets.Controllers
         public ActionResult Index()
         {
             return View();
-        }   
+        }
 
         public ActionResult Conexion()
         {
