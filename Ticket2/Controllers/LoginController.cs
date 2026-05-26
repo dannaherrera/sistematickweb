@@ -140,6 +140,12 @@ namespace Ticket2.Controllers
             return View();
         }
 
+        public ActionResult GenTickets()
+        {
+            return View();
+        }
+
+
         // GET: Login/Edit/5
         public ActionResult Edit(int id)
         {
