@@ -56,54 +56,12 @@
         </div>
     </div>
 </div>
-
-<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script>
-    document.getElementById("formLogin").addEventListener("submit", function (e) {
-        e.preventDefault(); 
+   
+    var usuarioLogueado = '@(TempData["UsuarioLogin"] ?? "")';
 
-        const form = e.target;
-        const formData = new FormData(form);
-
-
-        fetch(form.action, {
-            method: 'POST',
-            body: new URLSearchParams(formData) 
-        })
-        .then(response => response.json())
-        .then(data => {
-            if (data.success) {
-
-                sessionStorage.setItem("username", data.username);
-                sessionStorage.setItem("rol", data.rol); 
-
-
-                Swal.fire({
-                    icon: 'success',
-                    title: '¡Bienvenido!',
-                    text: data.message,
-                    timer: 2000,
-                    showConfirmButton: false
-                }).then(() => {
-
-                    window.location.href = '@Url.Action("Entrar", "Login")';
-                });
-            } else {
-
-                Swal.fire({
-                    icon: 'error',
-                    title: 'Error de acceso',
-                    text: data.message
-                });
-            }
-        })
-        .catch(error => {
-            console.error("Error:", error);
-            Swal.fire({
-                icon: 'error',
-                title: 'Error de red',
-                text: 'No se pudo conectar con el servidor.'
-            });
-        });
-    });
+    if (usuarioLogueado !== "") {
+        sessionStorage.setItem("usuario", usuarioLogueado);
+        console.log("Usuario guardado en sessionStorage: " + sessionStorage.getItem("usuario"));
+    }
 </script>

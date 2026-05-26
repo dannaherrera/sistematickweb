@@ -68,3 +68,16 @@
 
     </div>
 </nav>
+<script>
+
+    var usuarioLogueado = "@(Session["UsuarioLogin"] ?? "")";
+
+    console.log("Intentando leer sesión del servidor... Usuario encontrado: " + usuarioLogueado);
+
+    if (usuarioLogueado !== "") {
+        sessionStorage.setItem("usuario", usuarioLogueado);
+        console.log("¡Éxito! Se guardó en el sessionStorage de Chrome.");
+    } else {
+        console.warn("No se pudo guardar: Session['UsuarioLogin'] llegó vacío desde el servidor.");
+    }
+</script>

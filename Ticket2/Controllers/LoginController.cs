@@ -85,77 +85,46 @@ namespace Ticket2.Controllers
             }
         }*/
 
-            
-            [HttpPost]
-            public ActionResult Entrar(string username, string password)
+
+        [HttpPost]
+        public ActionResult Entrar(string username, string password)
+        {
+            ConexionBD newconexionBD = new ConexionBD();
+
+            try
             {
-
-                ConexionBD newconexionBD = new ConexionBD();
-                
-
-
-                try
+                using (SqlConnection conexion = newconexionBD.ObtenerConexion())
                 {
-                    using (SqlConnection conexion = newconexionBD.ObtenerConexion())
+                    conexion.Open();
+                    bool esValido = ConexionBD.Validar(username, password);
+
+                    if (username == null || password == null)
+                    {
+                        return RedirectToAction("Index");
+                    }
+                    else if (esValido)
                     {
 
-                        conexion.Open();
+                        Session["UsuarioLogin"] = username;
 
-                        MensajeAlerta mensajeLogin = new MensajeAlerta();
-
-                        ///TempData["AlertaMensaje"]="¡Hola! Este es un mensaje directo en la pantalla del navegador.";
-                        TempData["AlertaLogin"] = MensajeAlerta.LoginCorrecto("¡Datos guardados correctamente desde el controlador!");
-
-                        bool esValido = SistemaTickets.Models.Clases.ConexionBD.Validar(username, password); 
-
-                        if (username == null || password == null)
-                        {
-                            System.Diagnostics.Debug.WriteLine("Por favor, llene todos los campos");
-                            Response.Redirect("Index");
-
-                        }
-                        else if (esValido) 
-                        {
-
-                            int rol;
-    
-                            System.Diagnostics.Debug.WriteLine("¡Inicio de sesión exitoso!");
-                            TempData["AlertaLogin"] = MensajeAlerta.LoginCorrecto("¡Bienvenido al sistema!");
-                            System.Diagnostics.Debug.WriteLine("La VALIDACION fue exitosa!!!");
-                            return Json(new
-                            {
-                                success = true,
-                                message = "Inicio de sesión correcto.",
-                                username = username,
-                                rol = 1
-                            });
-
+                        return RedirectToAction("Menu");
                     }
-                        else
-                        {
-                            System.Diagnostics.Debug.WriteLine("Credenciales incorrectas.");
-                            TempData["Alerta"] = "Usuario o contraseña incorrectos.";
-                            return Json(new { success = false, message = "Usuario o contraseña incorrectos." });
-                            ///return RedirectToAction("Index");
-                        }
-
-                        return RedirectToAction("/Menu");
-                        ///return RedirectToAction("/Menu");
+                    else
+                    {
+                        TempData["Alerta"] = "Usuario o contraseña incorrectos.";
+                        return RedirectToAction("Index");
                     }
-                }
-                catch (Exception ex)
-                {
-                    System.Diagnostics.Debug.WriteLine("Error en la conexion a la BD" + ex.Message);
-                    TempData["MensajeError"] = "Error al conectar: " + ex.Message;
-                    TempData["Alerta"] = "Error en la conexion";
-                    return Json(new { success = false, message = "Ocurrió un error en el servidor: " + ex.Message });
-                    ///return RedirectToAction("/Index");
-
-                    ///return RedirectToAction("Index");
                 }
             }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine("Error: " + ex.Message);
+                return RedirectToAction("Index");
+            }
+        }
 
-            [HttpPost]
+
+        [HttpPost]
         public JsonResult LoginCorrecto(string mensaje)
         {
             System.Diagnostics.Debug.WriteLine("Esta por mandar el mensaje!!!");
