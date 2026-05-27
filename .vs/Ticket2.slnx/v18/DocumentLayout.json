@@ -3,11 +3,11 @@
   "WorkspaceRootPath": "C:\\Users\\gasimar\\Documents\\SistemaTickWeb\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7E731AE7-2E7F-4165-BFF9-124261285A4F}|Ticket2\\Ticket2.csproj|C:\\Users\\gasimar\\Documents\\SistemaTickWeb\\ticket2\\views\\login\\menu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{7E731AE7-2E7F-4165-BFF9-124261285A4F}|Ticket2\\Ticket2.csproj|c:\\users\\gasimar\\documents\\sistematickweb\\ticket2\\views\\login\\menu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{7E731AE7-2E7F-4165-BFF9-124261285A4F}|Ticket2\\Ticket2.csproj|solutionrelative:ticket2\\views\\login\\menu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7E731AE7-2E7F-4165-BFF9-124261285A4F}|Ticket2\\Ticket2.csproj|c:\\users\\gasimar\\documents\\sistematickweb\\ticket2\\views\\login\\gentickets.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{7E731AE7-2E7F-4165-BFF9-124261285A4F}|Ticket2\\Ticket2.csproj|C:\\Users\\gasimar\\Documents\\SistemaTickWeb\\ticket2\\views\\login\\gentickets.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{7E731AE7-2E7F-4165-BFF9-124261285A4F}|Ticket2\\Ticket2.csproj|solutionrelative:ticket2\\views\\login\\gentickets.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
@@ -15,7 +15,7 @@
       "RelativeMoniker": "D:0:0:{7E731AE7-2E7F-4165-BFF9-124261285A4F}|Ticket2\\Ticket2.csproj|solutionrelative:ticket2\\views\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7E731AE7-2E7F-4165-BFF9-124261285A4F}|Ticket2\\Ticket2.csproj|c:\\users\\gasimar\\documents\\sistematickweb\\ticket2\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7E731AE7-2E7F-4165-BFF9-124261285A4F}|Ticket2\\Ticket2.csproj|C:\\Users\\gasimar\\Documents\\SistemaTickWeb\\ticket2\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7E731AE7-2E7F-4165-BFF9-124261285A4F}|Ticket2\\Ticket2.csproj|solutionrelative:ticket2\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -55,8 +55,7 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-05-09T04:53:42.097Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -68,8 +67,7 @@
               "RelativeToolTip": "Ticket2\\Views\\Login\\GenTickets.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-26T00:33:05.7Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-26T00:33:05.7Z"
             },
             {
               "$type": "Document",
@@ -93,8 +91,7 @@
               "RelativeToolTip": "Ticket2\\Controllers\\LoginController.cs",
               "ViewState": "AgIAAH0AAAAAAAAAAAAUwJEAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-09T04:57:05.663Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-09T04:57:05.663Z"
             },
             {
               "$type": "Document",
@@ -117,7 +114,7 @@
               "RelativeDocumentMoniker": "Ticket2\\Views\\Login\\Menu.cshtml",
               "ToolTip": "C:\\Users\\gasimar\\Documents\\SistemaTickWeb\\Ticket2\\Views\\Login\\Menu.cshtml",
               "RelativeToolTip": "Ticket2\\Views\\Login\\Menu.cshtml",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAABVAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABQAAABUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-05-22T21:59:04.014Z",
               "EditorCaption": ""
