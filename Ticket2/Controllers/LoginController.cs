@@ -9,7 +9,7 @@ using System.Web.Security;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using Ticket2.Models.clases;
-using System.Linq;
+//using System.Linq;
 
 namespace Ticket2.Controllers
 {

@@ -1,7 +1,141 @@
+@model List<Ticket2.Models.clases.Ticket>
 
 @{
-    ViewBag.Title = "GenTickets";
     Layout = null;
 }
 
-<h1>HOLA SOY GENERACION DE TICKETS</h1>
+<div class="header">
+    <div class="logo">Lester</div>
+
+    <a class="btn-salir" href="@Url.Action("Menu", "Default")">
+        Salir
+    </a>
+</div>
+
+<div class="contenido">
+
+    <div class="titulo">Generación de Tickets</div>
+    <div class="subtitulo">Sistema de Ticket Lester</div>
+
+    @if (ViewData["Error"] != null)
+    {
+        <div class="mensaje-error">
+            @ViewData["Error"]
+        </div>
+    }
+
+    <div class="form-card">
+        <div class="form-title">Nuevo ticket</div>
+
+        <form method="post" action="@Url.Action("CrearTicket", "Default")">
+
+            <div class="form-grid">
+
+                <div class="form-group">
+                    <label>Asunto</label>
+                    <input type="text" name="Asunto" placeholder="Ej. Problema con entrega" required />
+                </div>
+
+                <div class="form-group">
+                    <label>Tipo</label>
+                    <select name="Tipo" required>
+                        <option value="Mantenimiento">Mantenimiento</option>
+                        <option value="Garantía">Garantía</option>
+                        <option value="Entrega">Entrega</option>
+                        <option value="Instalación">Instalación</option>
+                        <option value="Otro">Otro</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Prioridad</label>
+                    <select name="Prioridad" required>
+                        <option value="Baja">Baja</option>
+                        <option value="Media">Media</option>
+                        <option value="Alta">Alta</option>
+                        <option value="Urgente">Urgente</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Estado</label>
+                    <select name="Estado" required>
+                        <option value="Abierto">Abierto</option>
+                        <option value="En proceso">En proceso</option>
+                        <option value="En espera">En espera</option>
+                        <option value="Cerrado">Cerrado</option>
+                    </select>
+                </div>
+
+                <div class="form-group full-row">
+                    <label>Descripción</label>
+                    <textarea name="Descripcion" placeholder="Describe el problema o solicitud..."></textarea>
+                </div>
+
+            </div>
+
+            <button type="submit" class="btn-crear">
+                Crear Ticket
+            </button>
+
+        </form>
+    </div>
+
+    <div class="tabla-card">
+        <div class="tabla-title">Mis tickets recientes</div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Asunto</th>
+                    <th>Estado</th>
+                    <th>Tipo</th>
+                    <th>Prioridad</th>
+                    <th>Fecha</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                @{
+                    bool tieneTickets = false;
+                }
+
+                @foreach (var ticket in Model)
+                {
+                    tieneTickets = true;
+
+                    <tr>
+                        <td>@ticket.Id</td>
+                        <td>@ticket.Asunto</td>
+                        <td>@ticket.Estado</td>
+                        <td>@ticket.Tipo</td>
+                        <td>@ticket.Prioridad</td>
+                        <td>@ticket.FechaCreacion.ToString("dd/MM/yyyy")</td>
+                        <td>
+                            <a class="btn-editar" href="@Url.Action("EditarTicket", "Default", new { id = ticket.Id })">
+                                Editar
+                            </a>
+
+                            <form method="post" action="@Url.Action("EliminarTicket", "Default")" style="display:inline;">
+                                <input type="hidden" name="id" value="@ticket.Id" />
+                                <button type="submit" class="btn-eliminar" onclick="return confirm('¿Eliminar este ticket?');">
+                                    Eliminar
+                                </button>
+                            </form>
+                        </td>
+                    </tr>
+                }
+
+                @if (!tieneTickets)
+                {
+                    <tr>
+                        <td colspan="7">No hay tickets registrados.</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+</div>
