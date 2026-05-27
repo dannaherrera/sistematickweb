@@ -189,5 +189,10 @@ namespace Ticket2.Controllers
                 return View();
             }
         }
+
+        public ActionResult Onclick()
+        {
+            return RedirectToAction("Menu");
+        }
     }
 }

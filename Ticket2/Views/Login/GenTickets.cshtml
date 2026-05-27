@@ -1,141 +1,143 @@
 @model List<Ticket2.Models.clases.Ticket>
 
 @{
+    ViewBag.Title = "GenTickets";
     Layout = null;
+
 }
 
-<div class="header">
-    <div class="logo">Lester</div>
 
-    <a class="btn-salir" href="@Url.Action("Menu", "Default")">
-        Salir
-    </a>
-</div>
+<link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+<link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<script src="https://jsdelivr.net"></script>
 
-<div class="contenido">
+<body background-color: #E1F5CB>
+    <nav class="navbar navbar-expand-lg navbar-lester" style="background-color: #E0FFA1; ">
+        <div class="container-fluid">
 
-    <div class="titulo">Generación de Tickets</div>
-    <div class="subtitulo">Sistema de Ticket Lester</div>
+            <a class="navbar-brand d-flex align-items-center" href="@Url.Action("Menu", "Home")">
+                <img src="C:\Users\gasimar\Documents\SistemaTickWeb\Logo_horizontal_verde.png" alt="Lester Colchones" class="logo-lester" />
+            </a>
 
-    @if (ViewData["Error"] != null)
-    {
-        <div class="mensaje-error">
-            @ViewData["Error"]
-        </div>
-    }
-
-    <div class="form-card">
-        <div class="form-title">Nuevo ticket</div>
-
-        <form method="post" action="@Url.Action("CrearTicket", "Default")">
-
-            <div class="form-grid">
-
-                <div class="form-group">
-                    <label>Asunto</label>
-                    <input type="text" name="Asunto" placeholder="Ej. Problema con entrega" required />
-                </div>
-
-                <div class="form-group">
-                    <label>Tipo</label>
-                    <select name="Tipo" required>
-                        <option value="Mantenimiento">Mantenimiento</option>
-                        <option value="Garantía">Garantía</option>
-                        <option value="Entrega">Entrega</option>
-                        <option value="Instalación">Instalación</option>
-                        <option value="Otro">Otro</option>
-                    </select>
-                </div>
-
-                <div class="form-group">
-                    <label>Prioridad</label>
-                    <select name="Prioridad" required>
-                        <option value="Baja">Baja</option>
-                        <option value="Media">Media</option>
-                        <option value="Alta">Alta</option>
-                        <option value="Urgente">Urgente</option>
-                    </select>
-                </div>
-
-                <div class="form-group">
-                    <label>Estado</label>
-                    <select name="Estado" required>
-                        <option value="Abierto">Abierto</option>
-                        <option value="En proceso">En proceso</option>
-                        <option value="En espera">En espera</option>
-                        <option value="Cerrado">Cerrado</option>
-                    </select>
-                </div>
-
-                <div class="form-group full-row">
-                    <label>Descripción</label>
-                    <textarea name="Descripcion" placeholder="Describe el problema o solicitud..."></textarea>
-                </div>
-
-            </div>
-
-            <button type="submit" class="btn-crear">
-                Crear Ticket
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarLester"
+                    aria-controls="navbarLester" aria-expanded="false" aria-label="Abrir menú">
+                <span class="navbar-toggler-icon"></span>
             </button>
 
-        </form>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarLester">
+                <ul class="navbar-nav align-items-lg-center gap-lg-3">
+
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-lester" href="@Url.Action("Menu", "Login")">
+                            <i class="bi bi-house-door"></i>
+                            <span>Inicio</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-lester" href="@Url.Action("Menu", "Login")">
+                            <i class="bi bi-house-door"></i>
+                            <span>Generar Nuevo</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-lester" href="@Url.Action("GenTickets", "Login")">
+                            <i class="bi bi-plus-square"></i>
+                            <span>Eliminar Ticket<br class="d-none d-lg-block" /> de Tickets</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-lester" href="@Url.Action("Index", "Panel")">
+                            <i class="bi bi-easel"></i>
+                            <span>Mostrar<br class="d-none d-lg-block" /> Ticket</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    
+    <div class="header">
+        <h2 class="display-4">Generacion de Tickets</h2>
     </div>
 
-    <div class="tabla-card">
-        <div class="tabla-title">Mis tickets recientes</div>
+    <div class="contenido">
 
-        <table>
-            <thead>
-                <tr>
-                    <th>ID</th>
-                    <th>Asunto</th>
-                    <th>Estado</th>
-                    <th>Tipo</th>
-                    <th>Prioridad</th>
-                    <th>Fecha</th>
-                    <th>Acciones</th>
-                </tr>
-            </thead>
+        <div class="titulo">Generación de Tickets</div>
+        <div class="subtitulo">Sistema de Ticket Lester</div>
 
-            <tbody>
-                @{
-                    bool tieneTickets = false;
-                }
+        @if (ViewData["Error"] != null)
+        {
+            <div class="mensaje-error">
+                @ViewData["Error"]
+            </div>
+        }
 
-                @foreach (var ticket in Model)
-                {
-                    tieneTickets = true;
+        <div class="form-card">
+            <div class="form-title">Nuevo ticket</div>
 
-                    <tr>
-                        <td>@ticket.Id</td>
-                        <td>@ticket.Asunto</td>
-                        <td>@ticket.Estado</td>
-                        <td>@ticket.Tipo</td>
-                        <td>@ticket.Prioridad</td>
-                        <td>@ticket.FechaCreacion.ToString("dd/MM/yyyy")</td>
-                        <td>
-                            <a class="btn-editar" href="@Url.Action("EditarTicket", "Default", new { id = ticket.Id })">
-                                Editar
-                            </a>
+            <form method="post" action="@Url.Action("CrearTicket", "Login")">
 
-                            <form method="post" action="@Url.Action("EliminarTicket", "Default")" style="display:inline;">
-                                <input type="hidden" name="id" value="@ticket.Id" />
-                                <button type="submit" class="btn-eliminar" onclick="return confirm('¿Eliminar este ticket?');">
-                                    Eliminar
-                                </button>
-                            </form>
-                        </td>
-                    </tr>
-                }
+                <div class="form-grid">
 
-                @if (!tieneTickets)
-                {
-                    <tr>
-                        <td colspan="7">No hay tickets registrados.</td>
-                    </tr>
-                }
-            </tbody>
-        </table>
+                    <div class="form-group">
+                        <label>Asunto</label>
+                        <input type="text" name="Asunto" placeholder="Ej. Problema con entrega" required />
+                    </div>
+
+                    <div class="form-group">
+                        <label>Tipo</label>
+                        <select name="Tipo" required>
+                            <option value="Mantenimiento">Mantenimiento</option>
+                            <option value="Garantía">Garantía</option>
+                            <option value="Entrega">Entrega</option>
+                            <option value="Instalación">Instalación</option>
+                            <option value="Otro">Otro</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Prioridad</label>
+                        <select name="Prioridad" required>
+                            <option value="Baja">Baja</option>
+                            <option value="Media">Media</option>
+                            <option value="Alta">Alta</option>
+                            <option value="Urgente">Urgente</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Estado</label>
+                        <select name="Estado" required>
+                            <option value="Abierto">Abierto</option>
+                            <option value="En proceso">En proceso</option>
+                            <option value="En espera">En espera</option>
+                            <option value="Cerrado">Cerrado</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group full-row">
+                        <label>Descripción</label>
+                        <textarea name="Descripcion" placeholder="Describe el problema o solicitud..."></textarea>
+                    </div>
+
+                </div>
+
+                <button type="submit" class="btn-crear">
+                    Crear Ticket
+                </button>
+
+            </form>
+        </div>
+
     </div>
 
-</div>
+        -->
+</body>

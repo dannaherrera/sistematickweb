@@ -21,7 +21,13 @@ namespace Ticket2.Controllers
             _repositorio = new RepositorioBase();
         }
 
+
         public ActionResult GenTickets()
+        {
+            return View();
+        }
+
+        /*public ActionResult GenTickets()
         {
             if (Session["Usuario"] == null)
             {
@@ -30,8 +36,8 @@ namespace Ticket2.Controllers
 
             var tickets = _repositorio.ObtenerTodos();
 
-            return View(tickets);
-        }
+            return View();
+        }*/
 
         [HttpPost]
         public ActionResult CrearTicket(Ticket ticket)
