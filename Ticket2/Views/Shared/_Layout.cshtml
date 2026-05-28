@@ -24,7 +24,7 @@
     <nav class="navbar navbar-expand-lg navbar-lester fixed-top" style="background-color: #E0FFA1;">
         <div class="container-fluid">
             <a class="navbar-brand d-flex align-items-center" href="@Url.Action("Menu", "Home")">
-                <img  src="@Url.Content("~/Content/Imagenes/Logo_horizontal_verde.png")" alt="Lester Colchones" class="logo-lester"  width="210" height="50" />
+                <img src="@Url.Content("~/Content/Imagenes/Logo_horizontal_verde.png")" alt="Lester Colchones" class="logo-lester" width="210" height="50" />
 
             </a>
 
@@ -34,47 +34,53 @@
             </button>
 
             <div class="collapse navbar-collapse justify-content-end" id="navbarLester">
-                <ul class="navbar-nav align-items-lg-center gap-lg-3">
-                      
+                <ul class="navbar-nav align-items-lg-center gap-lg-4">
+
                     <li class="nav-item">
-                        <button type="button" class="btn btn-outline-success text-center py-3 px-4" onclick="location.href='@Url.Action("Menu", "Login")'">
-                            <i class="fa-solid fa-house fa-2x"></i> 
-                            Inicio
-                        </button>
+                        <a class="nav-link text-center d-flex flex-column align-items-center text-success" href="@Url.Action("Menu", "Login")">
+                            <i class="fa-solid fa-house fa-lg mb-1"></i>
+                            <span>Inicio</span>
+                        </a>
                     </li>
+
                     <li class="nav-item">
-                        <button type="button" class="btn btn-outline-success text-center " onclick="location.href='@Url.Action("GenTickets", "Login")'">
-                            <i class="fa-solid fa-file-circle-plus fa-2x"></i>
-                            Generacion <br />de Tickets
-                        </button>
+                        <a class="nav-link text-center d-flex flex-column align-items-center text-success" href="@Url.Action("GenTickets", "Login")">
+                            <i class="fa-solid fa-file-circle-plus fa-lg mb-1"></i>
+                            <span>Generación <br /> de Tickets</span>
+                        </a>
                     </li>
+
                     <li class="nav-item">
-                        <button type="button" class="btn btn-outline-success text-center" onclick="location.href='@Url.Action("Menu", "Login")'">
-                            <i class="fa-solid fa-sliders fa-2x"></i>
-                            Panel de <br />Control
-                        </button>
+                        <a class="nav-link text-center d-flex flex-column align-items-center text-success" href="@Url.Action("Menu", "Login")">
+                            <i class="fa-solid fa-sliders fa-lg mb-1"></i>
+                            <span>Panel de <br /> Control</span>
+                        </a>
                     </li>
+
                     <li class="nav-item">
-                        <button type="button" class="btn btn-outline-success text-center py-3 px-4" onclick="location.href='@Url.Action("Menu", "Login")'">
-                            <i class="fa-solid fa-list fa-2x"></i>
-                            Catalogos
-                        </button>
+                        <a class="nav-link text-center d-flex flex-column align-items-center text-success" href="@Url.Action("Menu", "Login")">
+                            <i class="fa-solid fa-list fa-lg mb-1"></i>
+                            <span>Catálogos</span>
+                        </a>
                     </li>
+
                     <li class="nav-item">
-                        <button type="button" class="btn btn-outline-success text-center py-3 px-4" onclick="location.href='@Url.Action("Menu", "Login")'">
-                            <i class="fa-solid fa-message fa-2x"></i>
-                            Solicitudes
-                        </button>
+                        <a class="nav-link text-center d-flex flex-column align-items-center text-success" href="@Url.Action("Menu", "Login")">
+                            <i class="fa-solid fa-message fa-lg mb-1"></i>
+                            <span>Solicitudes</span>
+                        </a>
                     </li>
+
                     <li class="nav-item">
-                        <button type="button" class="btn btn-outline-success text-center py-3 px-4" onclick="location.href='@Url.Action("Index", "Login")'">
-                            <i class="fa-solid fa-right-from-bracket fa-2x"></i>
-                            Salir
-                        </button>
+                        <a class="nav-link text-center d-flex flex-column align-items-center text-success" href="@Url.Action("Index", "Login")">
+                            <i class="fa-solid fa-right-from-bracket fa-lg mb-1"></i>
+                            <span>Salir</span>
+                        </a>
                     </li>
 
                 </ul>
             </div>
+
         </div>
     </nav>
 
