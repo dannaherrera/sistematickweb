@@ -1,40 +1,112 @@
 ﻿
 <html>
+<style>
+    * {
+        font-family: "Inter", sans-serif;
+    }
+</style>
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title </title>
     <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
     <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/816ec9c27f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="estilos.css">
     <script src="~/Scripts/modernizr-.js"></script>
 </head>
+
+
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
+    <nav class="navbar navbar-expand-lg navbar-lester fixed-top" style="background-color: #E0FFA1;">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="@Url.Action("Menu", "Home")">
+                <img  src="@Url.Content("~/Content/Imagenes/Logo_horizontal_verde.png")" alt="Lester Colchones" class="logo-lester"  width="210" height="50" />
+
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarLester"
+                    aria-controls="navbarLester" aria-expanded="false" aria-label="Abrir menú">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarLester">
+                <ul class="navbar-nav align-items-lg-center gap-lg-3">
+                      
+                    <li class="nav-item">
+                        <button type="button" class="btn btn-outline-success text-center py-3 px-4" onclick="location.href='@Url.Action("Menu", "Login")'">
+                            <i class="fa-solid fa-house fa-2x"></i> 
+                            Inicio
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" class="btn btn-outline-success text-center " onclick="location.href='@Url.Action("GenTickets", "Login")'">
+                            <i class="fa-solid fa-file-circle-plus fa-2x"></i>
+                            Generacion <br />de Tickets
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" class="btn btn-outline-success text-center" onclick="location.href='@Url.Action("Menu", "Login")'">
+                            <i class="fa-solid fa-sliders fa-2x"></i>
+                            Panel de <br />Control
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" class="btn btn-outline-success text-center py-3 px-4" onclick="location.href='@Url.Action("Menu", "Login")'">
+                            <i class="fa-solid fa-list fa-2x"></i>
+                            Catalogos
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" class="btn btn-outline-success text-center py-3 px-4" onclick="location.href='@Url.Action("Menu", "Login")'">
+                            <i class="fa-solid fa-message fa-2x"></i>
+                            Solicitudes
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" class="btn btn-outline-success text-center py-3 px-4" onclick="location.href='@Url.Action("Index", "Login")'">
+                            <i class="fa-solid fa-right-from-bracket fa-2x"></i>
+                            Salir
+                        </button>
+                    </li>
+
                 </ul>
             </div>
         </div>
-    </div>
+    </nav>
 
-    <div class="container body-content">
+    <!-- <div class="navbar navbar-inverse navbar-fixed-top">
+         <div class="container">
+             <div class="navbar-header">
+                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                     <span class="icon-bar"></span>
+                     <span class="icon-bar"></span>
+                     <span class="icon-bar"></span>
+                 </button>
+                 @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+             </div>
+             <div class="navbar-collapse collapse">
+                 <ul class="nav navbar-nav">
+                 </ul>
+             </div>
+         </div>
+     </div>
+
+        -->
+
+<div class="d-flex flex-column min-vh-100">
+
+    <div class="flex-grow-1 container pt-5 mt-4">
         @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-        </footer>
     </div>
+    <footer class="py-3 bg-light text-center border-top">
+        <p class="m-0">&copy; @DateTime.Now.Year - My System</p>
+    </footer>
+</div>
 
-    <script src="~/Scripts/jquery-.min.js"></script>
-    <script src="~/Scripts/bootstrap.min.js"></script>
+
 </body>
 </html>

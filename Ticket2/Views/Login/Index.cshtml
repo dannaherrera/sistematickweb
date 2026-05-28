@@ -1,7 +1,7 @@
 ﻿@model SistemaTickets.Models.Clases.ConexionBD
 @{
     ViewBag.Title = "Login";
-    Layout = null; 
+    Layout = null;
 
 }
 
@@ -20,7 +20,7 @@
 
             <h3 class="text-center mb-4">Iniciar Sesión</h3>
 
-            <form class="mx-auto" style="max-width: 22rem;" method="post" action="@Url.Action("Entrar", "Login")">
+            <form id="formLogin" class="mx-auto" style="max-width: 22rem;" method="post" action="@Url.Action("Entrar", "Login")">
 
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">
@@ -47,8 +47,6 @@
                            placeholder="••••••••">
                 </div>
 
-                <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
                 <button type="submit" class="btn btn-primary btn-lg rounded-3 w-100 ">
                     Entrar
                 </button>
@@ -58,3 +56,14 @@
         </div>
     </div>
 </div>
+
+
+<script>
+   
+    var usuarioLogueado = '@(TempData["UsuarioLogin"] ?? "")';
+
+    if (usuarioLogueado !== "") {
+        sessionStorage.setItem("usuario", usuarioLogueado);
+        console.log("Usuario guardado en sessionStorage: " + sessionStorage.getItem("usuario"));
+    }
+</script>
