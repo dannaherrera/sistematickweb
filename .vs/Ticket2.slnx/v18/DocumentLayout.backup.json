@@ -40,7 +40,7 @@
               "RelativeDocumentMoniker": "Ticket2\\Views\\Shared\\_Layout.cshtml",
               "ToolTip": "C:\\Users\\gasimar\\Documents\\SistemaTickWeb\\Ticket2\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "Ticket2\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAADAAAAAAAAAAAAAmwEUAAABiAAAAAAAAAA==",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAgwEoAAABqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-05-27T19:40:57.873Z",
               "IsPinned": true,
@@ -56,7 +56,8 @@
               "RelativeToolTip": "Ticket2\\Content\\CSS\\estilos.css",
               "ViewState": "AgIAAAcAAAAAAAAAAAAAAAwAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2026-05-27T21:43:22.501Z"
+              "WhenOpened": "2026-05-27T21:43:22.501Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -67,8 +68,9 @@
               "ToolTip": "C:\\Users\\gasimar\\Documents\\SistemaTickWeb\\Ticket2\\Views\\Login\\Index.cshtml",
               "RelativeToolTip": "Ticket2\\Views\\Login\\Index.cshtml",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAAAMAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002242|",
-              "WhenOpened": "2026-05-27T18:50:15.177Z"
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-27T18:50:15.177Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",

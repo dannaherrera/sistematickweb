@@ -3,11 +3,11 @@
   "WorkspaceRootPath": "C:\\Users\\gasimar\\Documents\\SistemaTickWeb\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7E731AE7-2E7F-4165-BFF9-124261285A4F}|Ticket2\\Ticket2.csproj|C:\\Users\\gasimar\\Documents\\SistemaTickWeb\\ticket2\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{7E731AE7-2E7F-4165-BFF9-124261285A4F}|Ticket2\\Ticket2.csproj|c:\\users\\gasimar\\documents\\sistematickweb\\ticket2\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{7E731AE7-2E7F-4165-BFF9-124261285A4F}|Ticket2\\Ticket2.csproj|solutionrelative:ticket2\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7E731AE7-2E7F-4165-BFF9-124261285A4F}|Ticket2\\Ticket2.csproj|c:\\users\\gasimar\\documents\\sistematickweb\\ticket2\\views\\login\\menu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{7E731AE7-2E7F-4165-BFF9-124261285A4F}|Ticket2\\Ticket2.csproj|C:\\Users\\gasimar\\Documents\\SistemaTickWeb\\ticket2\\views\\login\\menu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{7E731AE7-2E7F-4165-BFF9-124261285A4F}|Ticket2\\Ticket2.csproj|solutionrelative:ticket2\\views\\login\\menu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
@@ -40,7 +40,7 @@
               "RelativeDocumentMoniker": "Ticket2\\Views\\Shared\\_Layout.cshtml",
               "ToolTip": "C:\\Users\\gasimar\\Documents\\SistemaTickWeb\\Ticket2\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "Ticket2\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAADkAAAAAAAAAAAAcwFMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAgwEoAAABqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-05-27T19:40:57.873Z",
               "IsPinned": true,
@@ -56,8 +56,7 @@
               "RelativeToolTip": "Ticket2\\Content\\CSS\\estilos.css",
               "ViewState": "AgIAAAcAAAAAAAAAAAAAAAwAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2026-05-27T21:43:22.501Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-27T21:43:22.501Z"
             },
             {
               "$type": "Document",
@@ -69,8 +68,7 @@
               "RelativeToolTip": "Ticket2\\Views\\Login\\Index.cshtml",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAAAMAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-27T18:50:15.177Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-27T18:50:15.177Z"
             },
             {
               "$type": "Document",
@@ -82,8 +80,7 @@
               "RelativeToolTip": "Ticket2\\Views\\Login\\Menu.cshtml",
               "ViewState": "AgIAADMAAAAAAAAAAAAuwEYAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-22T21:59:04.014Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-22T21:59:04.014Z"
             },
             {
               "$type": "Document",
