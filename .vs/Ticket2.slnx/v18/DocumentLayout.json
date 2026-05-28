@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\gasimar\\Documents\\SistemaTickWeb\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7E731AE7-2E7F-4165-BFF9-124261285A4F}|Ticket2\\Ticket2.csproj|c:\\users\\gasimar\\documents\\sistematickweb\\ticket2\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7E731AE7-2E7F-4165-BFF9-124261285A4F}|Ticket2\\Ticket2.csproj|solutionrelative:ticket2\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{7E731AE7-2E7F-4165-BFF9-124261285A4F}|Ticket2\\Ticket2.csproj|c:\\users\\gasimar\\documents\\sistematickweb\\ticket2\\views\\login\\menu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{7E731AE7-2E7F-4165-BFF9-124261285A4F}|Ticket2\\Ticket2.csproj|solutionrelative:ticket2\\views\\login\\menu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E731AE7-2E7F-4165-BFF9-124261285A4F}|Ticket2\\Ticket2.csproj|c:\\users\\gasimar\\documents\\sistematickweb\\ticket2\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7E731AE7-2E7F-4165-BFF9-124261285A4F}|Ticket2\\Ticket2.csproj|solutionrelative:ticket2\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7E731AE7-2E7F-4165-BFF9-124261285A4F}|Ticket2\\Ticket2.csproj|c:\\users\\gasimar\\documents\\sistematickweb\\ticket2\\content\\css\\estilos.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
@@ -30,17 +30,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\gasimar\\Documents\\SistemaTickWeb\\Ticket2\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Ticket2\\Views\\Shared\\_Layout.cshtml",
               "ToolTip": "C:\\Users\\gasimar\\Documents\\SistemaTickWeb\\Ticket2\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "Ticket2\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAACEAAAAAAAAAAAAAACkAAAA5AAAAAAAAAA==",
+              "ViewState": "AgIAADsAAAAAAAAAAAAuwEUAAABiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-05-27T19:40:57.873Z",
               "IsPinned": true,
@@ -74,13 +74,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Menu.cshtml",
               "DocumentMoniker": "C:\\Users\\gasimar\\Documents\\SistemaTickWeb\\Ticket2\\Views\\Login\\Menu.cshtml",
               "RelativeDocumentMoniker": "Ticket2\\Views\\Login\\Menu.cshtml",
               "ToolTip": "C:\\Users\\gasimar\\Documents\\SistemaTickWeb\\Ticket2\\Views\\Login\\Menu.cshtml",
               "RelativeToolTip": "Ticket2\\Views\\Login\\Menu.cshtml",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAADAAAAA7AAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABkAAABHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-05-22T21:59:04.014Z",
               "EditorCaption": ""
