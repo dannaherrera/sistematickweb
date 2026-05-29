@@ -1,6 +1,6 @@
 ﻿@model SistemaTickets.Models.Clases.ConexionBD
 @{
-    ViewBag.Title = "Login";
+    ViewBag.Title = "Vistas";
     Layout = null;
 
 }
@@ -8,62 +8,37 @@
 <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
 <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
 <link href="~/Content/CSS/estilos.css" rel="stylesheet" type="text/css" />
-<link href="" />
 
-<h1 class="text-center">Login</h1>
+<body>
 
-<div class="container d-flex flex-column align-items-center pt-5">
+    <div class="container d-flex flex-column align-items-center pt-5">
+        <div class="card shadow-lg login-card border-0 rounded-4 w-100" style="max-width: 22rem;">
+            <div class="card-body p-4">
+                <h3 class="text-center mb-4">Iniciar Sesión</h3>
 
-    <div class="card shadow-lg login-card border-0 rounded-4 w-100" style="max-width: 22rem;">
 
-        <div class="card-body p-4">
+                <form id="formLogin" class="mx-auto" style="max-width: 22rem;" method="post" action="@Url.Action("Entrar", "Login")">
+                    <div class="mb-3">
+                        <label for="intUsername" class="form-label">Nombre de usuario</label>
+                        <input type="text" class="form-control form-control-lg text-center" name="username" id="intUsername" placeholder="Usuario ejemplo" required>
+                    </div>
 
-            <h3 class="text-center mb-4">Iniciar Sesión</h3>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                        <input type="password" class="form-control form-column-lg text-center" name="password" id="exampleInputPassword1" placeholder="••••••••" required>
+                    </div>
 
-            <form id="formLogin" class="mx-auto" style="max-width: 22rem;" method="post" action="@Url.Action("Entrar", "Login")">
-
-                <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">
-                        Nombre de usuario
-                    </label>
-
-                    <input type="text"
-                           class="form-control form-control-lg  text-center"
-                           name="username"
-                           id="intUsername"
-                           placeholder="Usuario ejemplo">
-
-                </div>
-
-                <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label ">
-                        Contraseña
-                    </label>
-
-                    <input type="password"
-                           class="form-control form-control-lg text-center"
-                           name="password"
-                           id="exampleInputPassword1"
-                           placeholder="••••••••">
-                </div>
-
-                <button type="submit" class="btn btn-primary btn-lg rounded-3 w-100 ">
-                    Entrar
-                </button>
-
-            </form>
-
+                    <button type="submit" class="btn btn-primary btn-lg rounded-3 w-100">Entrar</button>
+                </form>
+            </div>
         </div>
     </div>
-</div>
 
-
-<script>
-   
-    var usuarioLogueado = '@(TempData["UsuarioLogin"] ?? "")';
-
-    if (usuarioLogueado !== "") {
-        sessionStorage.setItem("usuario", usuarioLogueado);
-        console.log("Usuario guardado en sessionStorage: " + sessionStorage.getItem("usuario"));
-    }
-</script>
+    <script>
+        var usuarioLogueado = '@(TempData["UsuarioLogin"] ?? "")';
+        if (usuarioLogueado !== "") {
+            sessionStorage.setItem("usuario", usuarioLogueado);
+            console.log("Usuario guardado en sessionStorage: " + sessionStorage.getItem("usuario"));
+        }
+    </script>
+</body>

@@ -24,12 +24,16 @@ namespace Ticket2.Controllers
             }
         }
 
-
-        // GET: Login
         public ActionResult Index()
         {
+            if (Session["UsuarioLogin"] != null)
+            {
+                return RedirectToAction("Menu", "VistasS"); 
+            }
+
             return View();
         }
+
 
         // GET: Login/Details/5
         public ActionResult Details(int id)
@@ -89,6 +93,12 @@ namespace Ticket2.Controllers
         [HttpPost]
         public ActionResult Entrar(string username, string password)
         {
+            if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))
+            {
+                TempData["Alerta"] = "Por favor, llene todos los campos.";
+                return RedirectToAction("Index");
+            }
+
             ConexionBD newconexionBD = new ConexionBD();
 
             try
@@ -98,16 +108,11 @@ namespace Ticket2.Controllers
                     conexion.Open();
                     bool esValido = ConexionBD.Validar(username, password);
 
-                    if (username == null || password == null)
+                    if (esValido)
                     {
-                        return RedirectToAction("Index");
-                    }
-                    else if (esValido)
-                    {
-
                         Session["UsuarioLogin"] = username;
 
-                        return RedirectToAction("Menu");
+                        return RedirectToAction("Menu", "VistasS");
                     }
                     else
                     {
@@ -119,8 +124,19 @@ namespace Ticket2.Controllers
             catch (Exception ex)
             {
                 System.Diagnostics.Debug.WriteLine("Error: " + ex.Message);
+                TempData["Alerta"] = "Ocurrió un error en el servidor.";
                 return RedirectToAction("Index");
             }
+        }
+
+
+        public ActionResult CerrarSesion()
+        {
+            Session["UsuarioLogin"] = null;
+            Session.Clear();
+            Session.Abandon();
+
+            return RedirectToAction("Index");
         }
 
 
@@ -134,16 +150,7 @@ namespace Ticket2.Controllers
             return Json(respuesta, JsonRequestBehavior.AllowGet);
         }
 
-        // GET: Login/Menu
-        public ActionResult Menu()
-        {
-            return View();
-        }
 
-        public ActionResult GenTickets()
-        {
-            return View();
-        }
 
 
         // GET: Login/Edit/5

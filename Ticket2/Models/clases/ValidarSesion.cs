@@ -2,13 +2,14 @@
 using System.Web.Mvc;
 using System.Web.Routing;
 
-namespace TuProyecto.Models.clases 
+namespace Ticket2.Models.clases
 {
-    public class VerificarSesionAttribute : ActionFilterAttribute
+    public class ValidarSesion: ActionFilterAttribute
     {
+
         public override void OnActionExecuting(ActionExecutingContext filterContext)
         {
-            if (HttpContext.Current.Session["Usuario"] == null)
+            if (HttpContext.Current.Session["UsuarioLogin"] == null)
             {
                 filterContext.Result = new RedirectToRouteResult(
                     new RouteValueDictionary(new { controller = "Login", action = "Index" })
@@ -17,5 +18,6 @@ namespace TuProyecto.Models.clases
 
             base.OnActionExecuting(filterContext);
         }
+
     }
 }

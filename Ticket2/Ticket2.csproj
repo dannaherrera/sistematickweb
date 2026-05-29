@@ -121,6 +121,7 @@
     <Compile Include="Controllers\DefaultController.cs" />
     <Compile Include="Controllers\GenTickController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
+    <Compile Include="Controllers\VistasSController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -128,7 +129,7 @@
     <Compile Include="Models\clases\MensajeAlerta.cs" />
     <Compile Include="Models\clases\RepositorioBase.cs" />
     <Compile Include="Models\clases\Ticket.cs" />
-    <Compile Include="Models\clases\VerificarSesion.cs" />
+    <Compile Include="Models\clases\ValidarSesion.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -259,8 +260,8 @@
     <Content Include="Scripts\bootstrap.esm.js.map" />
     <Content Include="Scripts\bootstrap.bundle.min.js.map" />
     <Content Include="Scripts\bootstrap.bundle.js.map" />
-    <Content Include="Views\Login\Menu.cshtml" />
-    <Content Include="Views\Login\GenTickets.cshtml" />
+    <Content Include="Views\VistasS\Menu.cshtml" />
+    <Content Include="Views\VistasS\GenTickets.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

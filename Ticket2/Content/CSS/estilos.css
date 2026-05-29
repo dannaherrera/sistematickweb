@@ -1,14 +1,38 @@
 ﻿body {
-    background: #8FD1E3;
+    background-color: #85B8CF
 }
 
 .bienvenigaGris {
-    color: #969696;
+    font-family: "Inter", sans-serif;
+    color: #969696
 }
-.bienvenidaTextoCuadro{
-
+.bienvenidaTextoCuadro {
+    font-family: "Inter", sans-serif;
+    color: #1a1a1a;
+    font-size: 0.9rem
 }
 
-.card.bienvenidaCuadro {
+.bienvenidaCuadro {
     background-color: #F3FFD3;
+    border: 1px solid #dceec6
+    
+}
+
+.bienvenidaSpam {
+    color: #1a1a1a
+}
+
+
+.icono_fileVerde {
+    color: #7da854
+}
+
+.icono_relojNaranja {
+    color: #DF8013
+}
+.icono_relojMorado {
+    color: #922DB4
+}
+.icono_checkVerde {
+    color: #7da854
 }
